@@ -1,0 +1,13 @@
+name: drum-prediction-environment
+channels:
+  - defaults
+dependencies:
+  - python
+  - jupyterlab
+  - matplotlib
+  - pandas
+  - librosa
+  - sklearn
+  - numpy
+  - tensorflow
+  - IPython
