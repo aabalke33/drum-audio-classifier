@@ -44,7 +44,7 @@ I would suggest using Jupyter Notebooks and following the Cloud Demo Steps.
 ![Figure](https://github.com/aabalke33/drum-audio-classifier/blob/main/documentation/task2/graphs/graph_3_1.png)
 
 ## Dataset
-The reasoning for this is for development and post-development it is easier for users and developers to verify and interact with audio files rather than arrays. If a developer needs to verify the type of drum sample, they can just listen to it, removing a lot of hassle. The raw Uncompressed WAV Files are available in the dataset/samples folder. The CSV File to associate types is available in the dataset folder, titled “samples_metadata.csv”. The "drum_prediction.ipynb" file converts the WAV files into arrays of Amplification at Pitches (0 - 128) over Time.
+The raw dataset is directly from H3 Music Corp, consisting of 2,746 drum audio samples with a CSV File associating the file with a drum type classification. These files were provided and maintained in Uncompressed WAV file formats. The reasoning for this is for development and post-development it is easier for users and developers to verify and interact with audio files rather than arrays. If a developer needs to verify the type of drum sample, they can just listen to it, removing a lot of hassle. The raw Uncompressed WAV Files are available in the dataset/samples folder. The CSV File to associate types is available in the dataset folder, titled “samples_metadata.csv”. The "drum_prediction.ipynb" file converts the WAV files into arrays of Amplification at Pitches (0 - 128) over Time.
 
 ### Waveforms of the First Sample for Each Type in Dataset
 ![Figure](https://github.com/aabalke33/drum-audio-classifier/blob/main/documentation/task2/graphs/graph_1_1.png)
