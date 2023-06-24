@@ -1,10 +1,16 @@
 # drum-audio-classifier
 Classify Drum audio samples through the use of Artifical Intelligence / Machine Learning.
 
-The Drum Audio Classifier, uses a Convolutional Neural Network to predict the most likely drum type of a audio file. The dataset used to create this model was 2,700+ of my freelance music production audio samples.
+The Drum Audio Classifier, uses a Convolutional Neural Network to predict the most likely drum type of a audio file. The dataset used to create this model was 2,700+ of my freelance music production audio samples.     
 
 ## Advantages
 The advatange of a CNN model for audio classification is that the model works with spacial transformations and when dimensional data is offset. This means the shape of the audio data over time and frequency is modelled, not the exact locations. If a "Kick Drum" audio sample is higher pitches than the modelled samples, it will still register as a Kick Drum. If a "Snare Drum" sample doesn't strike until 2-3 seconds in, it will still register as a Snare Drum.
+
+<img src="https://github.com/aabalke33/drum-audio-classifier/assets/22086435/3767d05c-bc95-4a09-8cc1-948082ac1fa2" width="50%">
+
+## Youtube Video Breakdown
+
+[<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/22086435/248511694-40649f81-b0ae-4cde-8a3e-72bfa75b7805.jpg" width="50%">](https://www.youtube.com/watch?v=4DkwWLhBtOo)
 
 ## Usage
 ### Cloud Demo
@@ -45,6 +51,9 @@ I would suggest using Jupyter Notebooks and following the Cloud Demo Steps.
 
 ## Dataset
 The raw dataset is directly from H3 Music Corp, consisting of 2,746 drum audio samples with a CSV File associating the file with a drum type classification. These files were provided and maintained in Uncompressed WAV file formats. The reasoning for this is for development and post-development it is easier for users and developers to verify and interact with audio files rather than arrays. If a developer needs to verify the type of drum sample, they can just listen to it, removing a lot of hassle. The raw Uncompressed WAV Files are available in the dataset/samples folder. The CSV File to associate types is available in the dataset folder, titled “samples_metadata.csv”. The "drum_prediction.ipynb" file converts the WAV files into arrays of Amplification at Pitches (0 - 128) over Time.
+
+It is important to note that CNNs are intended to use image data not audio data. To remedy this audio amplification data has to be duplicatd across all 3 color channels (rgb). This makes the CNN "think" it is looking at a color image. Instead of height and width dimensions, the model uses pitch and time as the dimensions.
+![cnndata](https://github.com/aabalke33/drum-audio-classifier/assets/22086435/c9003944-97ca-46a1-b26a-b5b686b9ce84)
 
 ### Waveforms of the First Sample for Each Type in Dataset
 ![Figure](https://github.com/aabalke33/drum-audio-classifier/blob/main/documentation/task2/graphs/graph_1_1.png)
