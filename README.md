@@ -14,30 +14,9 @@ The advatange of a CNN model for audio classification is that the model works wi
 
 ## Usage
 ### Cloud Demo
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/aabalke33/drum-prediction/HEAD)
+![shot](https://github.com/aabalke33/drum-audio-classifier/assets/22086435/2f75f4ba-969e-4436-8f81-e639c6307ce3)
 
-This GitHub repository includes the user file “drum_prediction.ipynb”, the file used to build the model “drum_prediction_model.ipynb”, the dataset, the saved model and all documentation related to the assessment. The application has been built and tested with mybinder.org hosting in mind.
-To run the application:
-
-1. Click the Launch Binder button. This will create a virtual environment to load the application. This process usually takes 2-5 minutes. If an error occurs please retry, you shouldn’t have to retry more than once. Once this page is loaded, all files related to this submission will be accessible, including the ones used to create the model. As a user, the only required file to access is “drum_prediction.ipynb”.
-2. Access drum_prediction.ipynb
-3. Run the first Code Block (Ctrl + Enter). This will load all required modules and the saved model. You will get warnings regarding Tensorflow dependencies and build suggestions. These do not affect this program.
-4. Run the second Code Block (Ctrl + Enter). This will prompt a file path to classify the file. For demonstration purposes, 5 files have been uploaded to classify. After the file has been loaded, an audio player will load to verify the file chosen. The following paths can be copied in as inputs:
-
-   Clap Sample: dataset/samples_reserved/input_clap.wav
-
-   Closed Hat Sample: dataset/samples_reserved/input_closedhat.wav
-
-   Kick Sample: dataset/samples_reserved/input_kick.wav
-
-   Open Hat Sample: dataset/samples_reserved/input_openhat.wav
-
-   Snare Sample: dataset/samples_reserved/input_snare.wav
-
-5. Run the third Code Block (Ctrl + Enter). This final block of code will run a prediction against the saved model to classify the audio sample inputted. The console will print “Drum Sample is: (drum type)” upon completion.
-
-![Code Block](https://github.com/aabalke33/drum-audio-classifier/assets/22086435/edaba9c2-7c04-4025-952c-d8679032f5cd)
-*a correctly executed Code Block 2 and Code Block 3.*
+[A streamlit demo is available on Huggingface Spaces.](https://balkite-drum-classifier.hf.space) You may test your own drum samples, or use the samples provided on streamlit.
 
 ### Locally
 Dependencies: Python 3.10, matplotlib 3.7.0, pandas 1.5.3, librosa 0.10.0, sklearn 0.0, numpy 1.23.5, tensorflow 2.10.0, IPython 8.10.0
